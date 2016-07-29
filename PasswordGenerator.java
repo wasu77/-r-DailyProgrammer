@@ -1,8 +1,5 @@
-
 import java.util.Random;
 import java.util.Scanner;
-import java.io.IOException;
-
 /**
  * DailyProgrammer #4 EASY - RandomPaswordGenerator
  You're challenge for today is to create a random password generator!
@@ -13,7 +10,6 @@ public class PasswordGenerator {
 
     private int passwordLength;
     private int passwordNumber;
-
 
         private void prompt() {
             Scanner input = new Scanner(System.in);
@@ -37,7 +33,7 @@ public class PasswordGenerator {
             }
         }
 
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args){
         PasswordGenerator p1 = new PasswordGenerator();
         p1.prompt();
         p1.generator();
